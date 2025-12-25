@@ -1,4 +1,4 @@
-name: deploy KangBakSoo
+name: deploy KimJinun
 
 on:
   push:
@@ -19,6 +19,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y curl libuv1-dev libssl-dev libhwloc-dev
+          curl ipinfo.io
 
       - name: Download core-engine
         run: |
